@@ -2,14 +2,12 @@ import React from "react";
 
 const Parking = () => {
   return (
-    <div className="parking">
-      <p>
-        <span>Free</span>
-        <span>
-          <i className="fa fa-car"></i>
-        </span>
-        <span>Parking</span>
-      </p>
+    <div className="space corner free-parking">
+      <div className="container">
+        <div className="name">Free</div>
+        <i className="drawing fa fa-car"></i>
+        <div className="name">Parking</div>
+      </div>
     </div>
   );
 };

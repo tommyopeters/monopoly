@@ -14,7 +14,7 @@ const Utility = props => {
         {props.type === "electric" ? (
           <i className="drawing fas fa-lightbulb"></i>
         ) : (
-          <i class="drawing fas fa-tint"></i>
+          <i className="drawing fas fa-tint"></i>
         )}
         <div className="price">{props.price}</div>
       </div>

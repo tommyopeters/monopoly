@@ -2,12 +2,12 @@ import React from "react";
 
 const GoToJail = () => {
   return (
-    <div>
-      <span>Go To</span>
-      <span>
-        <i className="fa fa-user-secret"></i>
-      </span>
-      <span>Jail</span>
+    <div className="space corner go-to-jail">
+      <div class="container">
+        <div class="name">Go To</div>
+        <i class="drawing fas fa-gavel"></i>
+        <div class="name">Jail</div>
+      </div>
     </div>
   );
 };

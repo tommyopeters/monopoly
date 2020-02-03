@@ -6,7 +6,7 @@ const Property = props => {
       <div className="container">
         <div className={props.color + " color-bar"}></div>
         <div
-          className="name"
+          className={`name ${props.class}`}
           dangerouslySetInnerHTML={{ __html: props.propertyName }}
         ></div>
         <div className="price">{props.price}</div>

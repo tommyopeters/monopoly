@@ -14,14 +14,14 @@ const Fee = props => {
           <div className="name"> Income Tax</div>
         )}
         {props.type === "luxury" ? (
-          <div class="drawing fa fa-diamond"></div>
+          <div className="drawing fa fa-diamond"></div>
         ) : (
-          <div class="diamond"></div>
+          <div className="diamond"></div>
         )}
         {props.type === "luxury" ? (
-          <div class="instructions">Pay N75M</div>
+          <div className="instructions">Pay N75M</div>
         ) : (
-          <div class="instructions">
+          <div className="instructions">
             Pay 10% <br /> or <br /> N200M
           </div>
         )}
