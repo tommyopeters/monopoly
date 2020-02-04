@@ -11,18 +11,16 @@ import Center from "./Center";
 
 const Board = () => {
   return (
-    <div className="table">
-      <div className="board">
-        <Center />
-        <Go />
-        <BottomRow />
-        <JustVisiting />
-        <LeftRow />
-        <Parking />
-        <TopRow />
-        <GoToJail />
-        <RightRow />
-      </div>
+    <div className="board">
+      <Center />
+      <Go />
+      <BottomRow />
+      <JustVisiting />
+      <LeftRow />
+      <Parking />
+      <TopRow />
+      <GoToJail />
+      <RightRow />
     </div>
   );
 };

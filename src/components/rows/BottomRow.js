@@ -10,6 +10,7 @@ const BottomRow = () => {
       <Property
         propertyName="Connecticut Avenue"
         color="light-blue"
+        class="long-name"
         price={120}
       />
       <Property propertyName="Vermont Avenue" color="light-blue" price={100} />

@@ -90,92 +90,25 @@
 // }
 
 // =================
-// TYPOGRAPHY
-// =================
-
-@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
-
-$body-font: "Oswald", sans-serif;
-
-// =================
-// COLORS
-// =================
-
-$black: #080808;
-$brown: #640303;
-$board: #fafaf8;
-$dark-purple: #5e3577;
-$light-blue: #d2eaf5;
-$purple: #b02f7c;
-$orange: #fa811d;
-$red: #f50c2b;
-$yellow: #ffed20;
-$green: #41994e;
-$dark-blue: #5a6dba;
-
-// =================
 // GLOBAL
 // =================
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: $body-font;
-  font-weight: 400;
-  font-size: 10px;
-  color: $black;
-  text-transform: uppercase;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
+// body {
+//   margin: 0;
+//   font-family: $body-font;
+//   font-weight: 400;
+//   font-size: 10px;
+//   color: $black;
+//   text-transform: uppercase;
+// }
 
 // Property colors
-
-.dark-purple {
-  background: $dark-purple;
-}
-.light-blue {
-  background: $light-blue;
-}
-.purple {
-  background: $purple;
-}
-.orange {
-  background: $orange;
-}
-.red {
-  background: $red;
-}
-.yellow {
-  background: $yellow;
-}
-.green {
-  background: $green;
-}
-.dark-blue {
-  background: $dark-blue;
-}
 
 // =================
 // LAYOUT
 // =================
 
 // Table and board
-
-.table {
-  padding-left: 50px;
-  padding-right: 50px;
-}
 
 .board {
   display: grid;
