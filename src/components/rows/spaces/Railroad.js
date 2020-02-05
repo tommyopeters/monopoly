@@ -4,9 +4,9 @@ const Railroad = props => {
   return (
     <div className="space railroad">
       <div className="container">
-        <div className="name long-name">{props.propertyName}</div>
+        <div className="name long-name">{props.space.name}</div>
         <i className="drawing fas fa-subway"></i>
-        <div className="price">{props.price}</div>
+        <div className="price">{props.space.price}</div>
       </div>
     </div>
   );

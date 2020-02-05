@@ -4,19 +4,19 @@ const Utility = props => {
   return (
     <div
       className={`space utility ${
-        props.type === "electric" ? "electric-company" : "waterworks"
+        props.space.type === "electric" ? "electric-company" : "waterworks"
       }`}
     >
       <div className="container">
         <div className="property-name">
-          {props.type === "electric" ? "electric-company" : "waterworks"}
+          {props.space.type === "electric" ? "electric-company" : "waterworks"}
         </div>
-        {props.type === "electric" ? (
+        {props.space.type === "electric" ? (
           <i className="drawing fas fa-lightbulb"></i>
         ) : (
           <i className="drawing fas fa-tint"></i>
         )}
-        <div className="price">{props.price}</div>
+        <div className="price">{props.space.price}</div>
       </div>
     </div>
   );
