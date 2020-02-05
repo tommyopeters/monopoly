@@ -3,7 +3,7 @@ import Property from "./spaces/Property";
 import ActionCard from "./spaces/ActionCard";
 import Railroad from "./spaces/Railroad";
 import Fee from "./spaces/Fee";
-import { SpaceList } from "../../engine/SpaceList";
+import SpaceList from "../../engine/SpaceList.json";
 
 const RightRow = () => {
   return (
