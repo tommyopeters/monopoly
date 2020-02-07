@@ -6,10 +6,15 @@ const Property = props => {
       <div className="container">
         <div className={props.space.color + " color-bar"}></div>
         <div
-          className={`name ${props.space.class}`}
+          className={props.space.class ? `name ${props.space.class}` : "name"}
           dangerouslySetInnerHTML={{ __html: props.space.name }}
         ></div>
         <div className="price">{props.space.price}</div>
+        {props.space.owner.length > 0 ? (
+          <div className={`owner ${props.space.owner}`}>
+            <i className="fas fa-user"></i>
+          </div>
+        ) : null}
       </div>
     </div>
   );
