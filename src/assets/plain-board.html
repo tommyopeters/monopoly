@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Plain Board</title>
+    <link rel="stylesheet" href="plain-board.css" />
+    <script
+      src="https://kit.fontawesome.com/894127a8ff.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="App">
+        <div class="board">
+          <div class="center">
+            <div class="community-chest-deck">
+              <h2 class="label">Community Chest</h2>
+              <div class="deck">
+                <div class="card-box card-blue">
+                  <div class="card-blue-inside"></div>
+                </div>
+              </div>
+            </div>
+            <div class="title-box"><span class="title">MONOPOLY</span></div>
+            <div class="chance-deck">
+              <h2 class="label">Chance</h2>
+              <div class="deck">
+                <div class="card-box card-orange">
+                  <div class="card-orange-inside"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="space corner go">
+            <div class="container">
+              <div class="instructions">Collect $200.00 salary as you pass</div>
+              <div class="go-word">go</div>
+            </div>
+            <div
+              class="arrow fas fa-long-arrow-alt-left"
+              aria-hidden="true"
+            ></div>
+          </div>
+          <div class="row horizontal-row bottom-row">
+            <div id="8" class="space property">
+              <div class="container">
+                <div class="light-blue color-bar"></div>
+                <div class="name">Sabo-Yaba</div>
+                <div class="price">120</div>
+              </div>
+            </div>
+            <div id="7" class="space property">
+              <div class="container">
+                <div class="light-blue color-bar"></div>
+                <div class="name">Ikeja</div>
+                <div class="price">100</div>
+              </div>
+            </div>
+            <div class="space chance">
+              <div class="container">
+                <div class="name">Chance</div>
+                <i class="drawing fas fa-question" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div id="5" class="space property">
+              <div class="container">
+                <div class="light-blue color-bar"></div>
+                <div class="name">Opebi</div>
+                <div class="price">100</div>
+              </div>
+            </div>
+            <div class="space railroad">
+              <div class="container">
+                <div class="name long-name">Iddo Terminus</div>
+                <i class="drawing fas fa-subway" aria-hidden="true"></i>
+                <div class="price">200</div>
+              </div>
+            </div>
+            <div class="space fee income-tax">
+              <div class="container">
+                <div class="name">Income Tax</div>
+                <div class="diamond"></div>
+                <div class="instructions">
+                  Pay 10% <br />
+                  or <br />
+                  N200M
+                </div>
+              </div>
+            </div>
+            <div id="2" class="space property">
+              <div class="container">
+                <div class="brown color-bar"></div>
+                <div class="name">Agege</div>
+                <div class="price">80</div>
+              </div>
+            </div>
+            <div class="space community-chest">
+              <div class="container">
+                <div class="name">Community Chest</div>
+                <i class="drawing fas fa-cube" aria-hidden="true"></i>
+                <div class="instructions">Follow instructions on top card</div>
+              </div>
+            </div>
+            <div id="0" class="space property">
+              <div class="container">
+                <div class="brown color-bar"></div>
+                <div class="name">Makoko</div>
+                <div class="price">60</div>
+              </div>
+            </div>
+          </div>
+          <div class="space corner jail">
+            <div class="just">Just</div>
+            <div class="drawing">
+              <div class="container">
+                <div class="name">In</div>
+                <div class="window">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <i class="person fa fa-frown-o" aria-hidden="true"></i>
+                </div>
+                <div class="name">Jail</div>
+              </div>
+            </div>
+            <div class="visiting">Visiting</div>
+          </div>
+          <div class="row vertical-row left-row">
+            <div id="17" class="space property">
+              <div class="container">
+                <div class="orange color-bar"></div>
+                <div class="name">Awolowo Road</div>
+                <div class="price">200</div>
+              </div>
+            </div>
+            <div id="16" class="space property">
+              <div class="container">
+                <div class="orange color-bar"></div>
+                <div class="name">King's College</div>
+                <div class="price">180</div>
+              </div>
+            </div>
+            <div class="space community-chest">
+              <div class="container">
+                <div class="name">Community Chest</div>
+                <i class="drawing fas fa-cube" aria-hidden="true"></i>
+                <div class="instructions">Follow instructions on top card</div>
+              </div>
+            </div>
+            <div id="14" class="space property">
+              <div class="container">
+                <div class="orange color-bar"></div>
+                <div class="name">Mansard Place</div>
+                <div class="price">180</div>
+              </div>
+            </div>
+            <div class="space railroad">
+              <div class="container">
+                <div class="name long-name">Tincan Island Port</div>
+                <i class="drawing fas fa-subway" aria-hidden="true"></i>
+                <div class="price">200</div>
+              </div>
+            </div>
+            <div id="12" class="space property">
+              <div class="container">
+                <div class="purple color-bar"></div>
+                <div class="name">Admirality Way</div>
+                <div class="price">160</div>
+              </div>
+            </div>
+            <div id="11" class="space property">
+              <div class="container">
+                <div class="purple color-bar"></div>
+                <div class="name">Admirality Circle Plaza</div>
+                <div class="price">140</div>
+              </div>
+            </div>
+            <div class="space utility electric-company">
+              <div class="container">
+                <div class="property-name">electric-company</div>
+                <i class="drawing fas fa-lightbulb" aria-hidden="true"></i>
+                <div class="price">150</div>
+              </div>
+            </div>
+            <div id="9" class="space property">
+              <div class="container">
+                <div class="purple color-bar"></div>
+                <div class="name">Palms Shopping Mall</div>
+                <div class="price">140</div>
+              </div>
+            </div>
+          </div>
+          <div class="space corner free-parking">
+            <div class="container">
+              <div class="name">Free</div>
+              <i class="drawing fa fa-car" aria-hidden="true"></i>
+              <div class="name">Parking</div>
+            </div>
+          </div>
+          <div class="row horizontal-row top-row">
+            <div id="18" class="space property">
+              <div class="container">
+                <div class="red color-bar"></div>
+                <div class="name">Muson Centre</div>
+                <div class="price">220</div>
+              </div>
+            </div>
+            <div class="space chance">
+              <div class="container">
+                <div class="name">Chance</div>
+                <i class="drawing fas fa-question" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div id="20" class="space property">
+              <div class="container">
+                <div class="red color-bar"></div>
+                <div class="name">Lagos Yacht Club</div>
+                <div class="price">220</div>
+              </div>
+            </div>
+            <div id="21" class="space property">
+              <div class="container">
+                <div class="red color-bar"></div>
+                <div class="name">Tiamiyu Savage Str.</div>
+                <div class="price">240</div>
+              </div>
+            </div>
+            <div class="space railroad">
+              <div class="container">
+                <div class="name long-name">BRT Bus Terminal</div>
+                <i class="drawing fas fa-subway" aria-hidden="true"></i>
+                <div class="price">200</div>
+              </div>
+            </div>
+            <div id="23" class="space property">
+              <div class="container">
+                <div class="yellow color-bar"></div>
+                <div class="name">Falomo Shopping Centre</div>
+                <div class="price">260</div>
+              </div>
+            </div>
+            <div id="24" class="space property">
+              <div class="container">
+                <div class="yellow color-bar"></div>
+                <div class="name">35 Marina</div>
+                <div class="price">260</div>
+              </div>
+            </div>
+            <div class="space utility waterworks">
+              <div class="container">
+                <div class="property-name">waterworks</div>
+                <i class="drawing fas fa-tint" aria-hidden="true"></i>
+                <div class="price">150</div>
+              </div>
+            </div>
+            <div id="26" class="space property">
+              <div class="container">
+                <div class="yellow color-bar"></div>
+                <div class="name">Silverbird Cinema</div>
+                <div class="price">280</div>
+              </div>
+            </div>
+          </div>
+          <div class="space corner go-to-jail">
+            <div class="container">
+              <div class="name">Go To</div>
+              <i class="drawing fas fa-gavel" aria-hidden="true"></i>
+              <div class="name">Jail</div>
+            </div>
+          </div>
+          <div class="row vertical-row right-row">
+            <div id="27" class="space property">
+              <div class="container">
+                <div class="green color-bar"></div>
+                <div class="name">Ikoyi</div>
+                <div class="price">300</div>
+              </div>
+            </div>
+            <div id="28" class="space property">
+              <div class="container">
+                <div class="green color-bar"></div>
+                <div class="name">635 Akin Adesola St.</div>
+                <div class="price">300</div>
+              </div>
+            </div>
+            <div class="space community-chest">
+              <div class="container">
+                <div class="name">Community Chest</div>
+                <i class="drawing fas fa-cube" aria-hidden="true"></i>
+                <div class="instructions">Follow instructions on top card</div>
+              </div>
+            </div>
+            <div id="30" class="space property">
+              <div class="container">
+                <div class="green color-bar"></div>
+                <div class="name">Ilashe Road</div>
+                <div class="price">320</div>
+              </div>
+            </div>
+            <div class="space railroad">
+              <div class="container">
+                <div class="name long-name">Murtala Mohammed Airport</div>
+                <i class="drawing fas fa-subway" aria-hidden="true"></i>
+                <div class="price">200</div>
+              </div>
+            </div>
+            <div class="space chance">
+              <div class="container">
+                <div class="name">Chance</div>
+                <i class="drawing fas fa-question" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div id="33" class="space property">
+              <div class="container">
+                <div class="dark-blue color-bar"></div>
+                <div class="name">Bourdillon Road</div>
+                <div class="price">350</div>
+              </div>
+            </div>
+            <div class="space fee luxury-tax">
+              <div class="container">
+                <div class="name">Luxury Tax</div>
+                <div class="drawing fa fa-diamond" aria-hidden="true"></div>
+                <div class="instructions">Pay N75M</div>
+              </div>
+            </div>
+            <div id="35" class="space property">
+              <div class="container">
+                <div class="dark-blue color-bar"></div>
+                <div class="name">Banana Island</div>
+                <div class="price">400</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div 
+
+    <script src="plain-board.js"></script>
+  </body>
+</html>
