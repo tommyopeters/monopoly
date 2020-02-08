@@ -19,10 +19,12 @@ const Fee = props => {
           <div className="diamond"></div>
         )}
         {props.space.type === "luxury" ? (
-          <div className="instructions">Pay N75M</div>
+          <div className="instructions">
+            Pay <span className="million">₩</span>75
+          </div>
         ) : (
           <div className="instructions">
-            Pay 10% <br /> or <br /> N200M
+            Pay 10% <br /> or <br /> <span className="million">₩</span>200
           </div>
         )}
       </div>

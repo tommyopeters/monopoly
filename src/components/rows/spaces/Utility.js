@@ -12,11 +12,14 @@ const Utility = props => {
           {props.space.type === "electric" ? "electric-company" : "waterworks"}
         </div>
         {props.space.type === "electric" ? (
-          <i className="drawing fas fa-lightbulb"></i>
+          <i className="drawing far fa-lightbulb"></i>
         ) : (
           <i className="drawing fas fa-tint"></i>
         )}
-        <div className="price">{props.space.price}</div>
+        <div className="price">
+          <span className="million">₩</span>
+          {props.space.price}
+        </div>
       </div>
     </div>
   );

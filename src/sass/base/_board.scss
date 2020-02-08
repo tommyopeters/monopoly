@@ -23,6 +23,10 @@ body {
   height: 100vh;
   width: 100vw;
 }
+.million {
+  display: inline-block;
+  transform: rotate(180deg);
+}
 .board {
   display: grid;
   grid-template-columns: 13% 1fr 13%;
@@ -437,6 +441,11 @@ body {
 
 .row {
   .space {
+    transition: background-color 300ms ease-in-out;
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.112);
+    }
     .container {
       .name,
       .instructions,
@@ -459,15 +468,90 @@ body {
       }
     }
   }
-  .community-chest {
+  .community-chest,
+  .chance {
     .container {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-rows: max-content 1fr;
+      .name {
+        flex-grow: 1;
+      }
       .drawing {
         flex-grow: 1;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+
+        img {
+          height: 120%;
+        }
+      }
+    }
+  }
+  .railroad,
+  .utility {
+    .container {
+      height: 100%;
+      display: grid;
+      grid-template-rows: max-content 1fr 20%;
+
+      .drawing {
+        font-size: 5rem;
+        align-self: end;
+      }
+    }
+  }
+  .waterworks {
+    .drawing {
+      transform: rotate(180deg);
+      color: rgb(8, 169, 218);
+    }
+  }
+  .electric-company {
+    .drawing {
+      color: #ffed20;
+    }
+  }
+
+  .fee {
+    .container {
+      .name {
+        font-size: 1.4rem;
+        padding: 0 0.5rem;
+      }
+    }
+  }
+  .income-tax {
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .name {
+      margin-bottom: 0.3rem;
+    }
+
+    .diamond {
+      width: 0.7rem;
+      height: 0.7rem;
+      background: $black;
+      transform: rotate(45deg);
+      display: inline-block;
+    }
+
+    .instructions {
+      margin-top: 0.3rem;
+    }
+  }
+  .luxury-tax {
+    .container {
+      display: grid;
+      grid-template-rows: max-content 1fr 20%;
+      .drawing {
+        font-size: 4.5rem;
       }
     }
   }

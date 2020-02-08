@@ -1,4 +1,6 @@
 import React from "react";
+import Chance from "../../../assets/svgs/chance.svg";
+import Chest from "../../../assets/svgs/chest.svg";
 
 const ActionCard = props => {
   return (
@@ -14,12 +16,13 @@ const ActionCard = props => {
           <div className="name"> Community Chest</div>
         )}
         {props.space.type === "chance" ? (
-          <i className="drawing fas fa-question"></i>
+          <div className="drawing">
+            <img src={Chance} alt="" />
+          </div>
         ) : (
-          <i className="drawing fas fa-cube"></i>
-        )}
-        {props.space.type === "chance" ? null : (
-          <div className="instructions">Follow instructions on top card</div>
+          <div className="drawing">
+            <img src={Chest} alt="" />
+          </div>
         )}
       </div>
     </div>

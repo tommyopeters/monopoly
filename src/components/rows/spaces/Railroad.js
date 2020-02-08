@@ -6,7 +6,10 @@ const Railroad = props => {
       <div className="container">
         <div className="name long-name">{props.space.name}</div>
         <i className="drawing fas fa-subway"></i>
-        <div className="price">{props.space.price}</div>
+        <div className="price">
+          <span className="million">₩</span>
+          {props.space.price}
+        </div>
       </div>
     </div>
   );
