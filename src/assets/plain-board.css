@@ -43,6 +43,7 @@ body {
   width: 90rem;
   overflow: hidden;
   border: 2px solid black;
+  background-color: #cce3c6;
 }
 
 .board div {
@@ -173,17 +174,25 @@ body {
 .left-row {
   height: 100%;
   width: 100%;
-  background-color: red;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (1fr)[9];
       grid-template-rows: repeat(9, 1fr);
 }
 
+.left-row > div:nth-of-type(1) {
+  border-top: 0.2rem solid black;
+}
+
+.left-row > div:nth-of-type(9) {
+  border-bottom: 0.2rem solid black;
+}
+
 .left-row .space {
   overflow: hidden;
-  position: relative;
   border: 0.1rem solid black;
+  border-left: none;
+  border-right: 0.2rem solid black;
 }
 
 .left-row .space .container {
@@ -193,42 +202,30 @@ body {
       grid-template-rows: 20% 1fr 20%;
   -webkit-transform: rotate(90deg) translate(-30%, -17%);
           transform: rotate(90deg) translate(-30%, -17%);
-  background-color: yellow;
-  background-color: yellow;
-}
-
-.left-row .property .container .name {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
-}
-
-.left-row .property .container .price {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3 / 4;
-}
-
-.left-row .property .container .color-bar {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
 }
 
 .right-row {
   height: 100%;
   width: 100%;
-  background-color: red;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (1fr)[9];
       grid-template-rows: repeat(9, 1fr);
 }
 
+.right-row > div:nth-of-type(1) {
+  border-top: 0.2rem solid black;
+}
+
+.right-row > div:nth-of-type(9) {
+  border-bottom: 0.2rem solid black;
+}
+
 .right-row .space {
   overflow: hidden;
   border: 0.1rem solid black;
-  position: relative;
+  border-right: none;
+  border-left: 0.2rem solid black;
 }
 
 .right-row .space .container {
@@ -238,26 +235,6 @@ body {
       grid-template-rows: 20% 1fr 20%;
   -webkit-transform: rotate(270deg) translate(30%, 18%);
           transform: rotate(270deg) translate(30%, 18%);
-  background-color: yellow;
-  background-color: yellow;
-}
-
-.right-row .property .container .name {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
-}
-
-.right-row .property .container .price {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3 / 4;
-}
-
-.right-row .property .container .color-bar {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
 }
 
 .bottom-row {
@@ -267,11 +244,21 @@ body {
       grid-template-columns: repeat(9, 1fr);
 }
 
+.bottom-row > div:nth-of-type(1) {
+  border-left: 0.2rem solid black;
+}
+
+.bottom-row > div:nth-of-type(9) {
+  border-right: 0.2rem solid black;
+}
+
 .bottom-row .space {
   height: 100%;
   overflow: hidden;
   position: relative;
   border: 0.1rem solid black;
+  border-bottom: none;
+  border-top: 0.2rem solid black;
 }
 
 .bottom-row .space .container {
@@ -280,26 +267,6 @@ body {
   display: grid;
   -ms-grid-rows: 20% 1fr 20%;
       grid-template-rows: 20% 1fr 20%;
-  background-color: yellow;
-  background-color: yellow;
-}
-
-.bottom-row .property .container .name {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
-}
-
-.bottom-row .property .container .price {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3 / 4;
-}
-
-.bottom-row .property .container .color-bar {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
 }
 
 .top-row {
@@ -309,11 +276,21 @@ body {
       grid-template-columns: repeat(9, 1fr);
 }
 
+.top-row > div:nth-of-type(1) {
+  border-left: 0.2rem solid black;
+}
+
+.top-row > div:nth-of-type(9) {
+  border-right: 0.2rem solid black;
+}
+
 .top-row .space {
   height: 100%;
   overflow: hidden;
   position: relative;
   border: 0.1rem solid black;
+  border-top: none;
+  border-bottom: 0.2rem solid black;
 }
 
 .top-row .space .container {
@@ -324,25 +301,24 @@ body {
   display: grid;
   -ms-grid-rows: 20% 1fr 20%;
       grid-template-rows: 20% 1fr 20%;
-  background-color: yellow;
-  background-color: yellow;
 }
 
-.top-row .property .container .name {
+.row .property .container .name {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
 }
 
-.top-row .property .container .price {
+.row .property .container .price {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3 / 4;
 }
 
-.top-row .property .container .color-bar {
+.row .property .container .color-bar {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
+  border-bottom: 0.1rem solid black;
 }
 /*# sourceMappingURL=plain-board.css.map */
