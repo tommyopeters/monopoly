@@ -8,8 +8,8 @@ const Utility = props => {
       }`}
     >
       <div className="container">
-        <div className="property-name">
-          {props.space.type === "electric" ? "electric-company" : "waterworks"}
+        <div className="name">
+          {props.space.type === "electric" ? "electric company" : "waterworks"}
         </div>
         {props.space.type === "electric" ? (
           <i className="drawing far fa-lightbulb"></i>
