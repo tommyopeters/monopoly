@@ -1,9 +1,11 @@
 import Player from './Player'
 import Dice from './Dice'
+import SpaceList from './SpaceList.json'
 
 export default class Game{
     constructor(){
         this.Players = [];
+        this.Spaces = SpaceList
     }
 
     start(players){
@@ -23,10 +25,14 @@ export default class Game{
         dice.rollDice();
         return dice;
     }
+    //INCOMPLETE FUNCTION
     movePlayer(dice){
         this.Players[0].move(dice.diceNumber);
         while(this.Players[0].currentPosition < this.Players[0].finalPosition){
             //move player by one space
         }
+    }
+    resolveSpace(){
+
     }
 }

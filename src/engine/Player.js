@@ -25,4 +25,27 @@ export default class Player{
     move(diceNumber){
         this.finalPosition = (this.currentPosition + diceNumber) % 40;
     }
+    addMoney(amount){
+        if(this.debt > 0){
+            if(this.debt > amount){
+                this.debt -= amount;
+                return
+            }else{
+                amount -= this.debt;
+                this.debt = 0
+                this.addMoney(amount)
+            }
+        }else{
+            this.wallet += amount;
+        }
+    }
+    deductMoney(amount){
+        if(this.wallet > amount){
+            this.wallet -= amount
+        }else{
+            amount -= this.wallet;
+            this.wallet = 0;
+            this.debt += amount;
+        }
+    }
 }

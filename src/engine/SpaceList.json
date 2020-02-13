@@ -1,6 +1,7 @@
 [
   {
     "id": 0,
+    "spaceId": 1,
     "group": "property",
     "name": "Makoko",
     "price": 60,
@@ -12,14 +13,17 @@
     "houseCost": 50,
     "mortgageValue": 30,
     "mortgageStatus": false
+
   },
   {
     "id": 1,
+    "spaceId": 2,
     "group": "action",
     "type": "community"
   },
   {
     "id": 2,
+    "spaceId": 3,
     "name": "Agege",
     "group": "property",
     "price": 80,
@@ -34,12 +38,14 @@
   },
   {
     "id": 3,
+    "spaceId": 4,
     "group": "fee",
     "type": "income",
     "fee": 200
   },
   {
     "id": 4,
+    "spaceId": 5,
     "group": "railroad",
     "name": "Iddo Terminus",
     "price": 200,
@@ -50,6 +56,7 @@
   },
   {
     "id": 5,
+    "spaceId": 6,
     "group": "property",
     "name": "Opebi",
     "price": 100,
@@ -64,11 +71,13 @@
   },
   {
     "id": 6,
+    "spaceId": 7,
     "group": "action",
     "type": "chance"
   },
   {
     "id": 7,
+    "spaceId": 8,
     "group": "property",
     "name": "Ikeja",
     "price": 100,
@@ -83,6 +92,7 @@
   },
   {
     "id": 8,
+    "spaceId": 9,
     "group": "property",
     "name": "Sabo-Yaba",
     "price": 120,
@@ -97,6 +107,7 @@
   },
   {
     "id": 9,
+    "spaceId": 11,
     "group": "property",
     "name": "Palms Shopping Mall",
     "price": 140,
@@ -111,6 +122,7 @@
   },
   {
     "id": 10,
+    "spaceId": 12,
     "group": "utility",
     "type": "electric",
     "price": 150,
@@ -121,6 +133,7 @@
   },
   {
     "id": 11,
+    "spaceId": 13,
     "group": "property",
     "name": "Admirality Circle Plaza",
     "price": 140,
@@ -135,6 +148,7 @@
   },
   {
     "id": 12,
+    "spaceId": 14,
     "group": "property",
     "name": "Admirality Way",
     "price": 160,
@@ -149,6 +163,7 @@
   },
   {
     "id": 13,
+    "spaceId": 15,
     "group": "railroad",
     "name": "Tincan Island Port",
     "price": 200,
@@ -159,6 +174,7 @@
   },
   {
     "id": 14,
+    "spaceId": 16,
     "group": "property",
     "name": "Mansard Place",
     "price": 180,
@@ -173,11 +189,13 @@
   },
   {
     "id": 15,
+    "spaceId": 17,
     "group": "action",
     "type": "community"
   },
   {
     "id": 16,
+    "spaceId": 18,
     "group": "property",
     "name": "King's College",
     "price": 180,
@@ -192,6 +210,7 @@
   },
   {
     "id": 17,
+    "spaceId": 19,
     "group": "property",
     "name": "Awolowo Road",
     "price": 200,
@@ -206,6 +225,7 @@
   },
   {
     "id": 18,
+    "spaceId": 21,
     "group": "property",
     "name": "Muson Centre",
     "price": 220,
@@ -220,11 +240,13 @@
   },
   {
     "id": 19,
+    "spaceId": 22,
     "group": "action",
     "type": "chance"
   },
   {
     "id": 20,
+    "spaceId": 23,
     "group": "property",
     "name": "Lagos Yacht Club",
     "price": 220,
@@ -239,6 +261,7 @@
   },
   {
     "id": 21,
+    "spaceId": 24,
     "group": "property",
     "name": "Tiamiyu Savage Str.",
     "price": 240,
@@ -253,6 +276,7 @@
   },
   {
     "id": 22,
+    "spaceId": 25,
     "group": "railroad",
     "name": "BRT Bus Terminal",
     "price": 200,
@@ -263,6 +287,7 @@
   },
   {
     "id": 23,
+    "spaceId": 26,
     "group": "property",
     "name": "Falomo Shopping Centre",
     "price": 260,
@@ -277,6 +302,7 @@
   },
   {
     "id": 24,
+    "spaceId": 27,
     "group": "property",
     "name": "35 Marina",
     "price": 260,
@@ -290,7 +316,8 @@
     "mortgageStatus": false
   },
   {
-    "id": 24,
+    "id": 25,
+    "spaceId": 28,
     "group": "utility",
     "type": "water",
     "price": 150,
@@ -301,6 +328,7 @@
   },
   {
     "id": 26,
+    "spaceId": 29,
     "group": "property",
     "name": "Silverbird Cinema",
     "price": 280,
@@ -315,6 +343,7 @@
   },
   {
     "id": 27,
+    "spaceId": 31,
     "group": "property",
     "name": "Ikoyi",
     "price": 300,
@@ -329,6 +358,7 @@
   },
   {
     "id": 28,
+    "spaceId": 32,
     "group": "property",
     "name": "635 Akin Adesola St.",
     "price": 300,
@@ -343,11 +373,13 @@
   },
   {
     "id": 29,
+    "spaceId": 33,
     "group": "action",
     "type": "community"
   },
   {
     "id": 30,
+    "spaceId": 34,
     "group": "property",
     "name": "Ilashe Road",
     "price": 320,
@@ -362,6 +394,7 @@
   },
   {
     "id": 31,
+    "spaceId": 35,
     "group": "railroad",
     "name": "Murtala Mohammed Airport",
     "price": 200,
@@ -372,11 +405,13 @@
   },
   {
     "id": 32,
+    "spaceId": 36,
     "group": "action",
     "type": "chance"
   },
   {
     "id": 33,
+    "spaceId": 37,
     "group": "property",
     "name": "Bourdillon Road",
     "price": 350,
@@ -391,12 +426,14 @@
   },
   {
     "id": 34,
+    "spaceId": 38,
     "group": "fee",
     "type": "luxury",
     "fee": 100
   },
   {
     "id": 35,
+    "spaceId": 39,
     "group": "property",
     "name": "Banana Island",
     "price": 400,
