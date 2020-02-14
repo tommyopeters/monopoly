@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import Property from "./spaces/Property";
 import ActionCard from "./spaces/ActionCard";
 import Fee from "./spaces/Fee";
 import Railroad from "./spaces/Railroad";
-import SpaceList from "../../engine/SpaceList.json";
+import { GameContext } from "../../contexts/GameContext";
 
 const BottomRow = () => {
+  const { SpaceList } = useContext(GameContext);
   return (
     <div className="row horizontal-row bottom-row">
       <Property space={SpaceList[8]} />

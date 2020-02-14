@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import Property from "./spaces/Property";
 import ActionCard from "./spaces/ActionCard";
 import Railroad from "./spaces/Railroad";
 import Fee from "./spaces/Fee";
-import SpaceList from "../../engine/SpaceList.json";
+import { GameContext } from "../../contexts/GameContext";
 
 const RightRow = () => {
+  const { SpaceList } = useContext(GameContext);
   return (
     <div className="row vertical-row right-row">
       <Property space={SpaceList[27]} />
