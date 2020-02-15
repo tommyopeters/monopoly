@@ -28,6 +28,7 @@ body {
   transform: rotate(180deg);
 }
 .board {
+  position: relative;
   display: grid;
   grid-template-columns: 13% 1fr 13%;
   grid-template-rows: 13% 1fr 13%;
@@ -552,6 +553,106 @@ body {
       grid-template-rows: max-content 1fr 20%;
       .drawing {
         font-size: 4.5rem;
+      }
+    }
+  }
+}
+
+//Space Card / Property Card
+.space-card-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.681);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .space-card {
+    background-color: white;
+    width: max-content;
+  }
+  .space-card {
+    height: 60%;
+    width: 40%;
+    padding: 1.5rem;
+    text-transform: none;
+
+    .outer-container {
+      padding: 1rem;
+      border: 0.2rem solid black;
+      height: 100%;
+      width: 100%;
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        font-family: "Copperplate";
+      }
+
+      .container.property {
+        .title {
+          height: 20%;
+          border: 0.2rem solid black;
+          padding: 0.5rem;
+          margin-bottom: 1rem;
+
+          .title-deed {
+            font-weight: 700;
+            font-size: 1.4rem;
+          }
+          .name {
+            font-size: 3rem;
+            font-weight: 700;
+            padding: 0 0rem;
+          }
+        }
+        .info {
+          font-family: "Kabel";
+          font-weight: bold;
+          .rent {
+            font-size: 2rem;
+            width: 100%;
+            text-align: center;
+          }
+          .house-rent {
+            display: flex;
+            font-size: 1.5rem;
+            flex-direction: column;
+
+            &-item {
+              display: grid;
+              grid-template-columns: 1fr max-content;
+
+              .with-house {
+                text-align: start;
+              }
+            }
+          }
+          .hotel-rent {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+          }
+          .costs {
+            font-size: 1.5rem;
+          }
+        }
+
+        .extra-info {
+          font-family: "Kabel";
+          font-size: 1.2rem;
+          font-style: italic;
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
       }
     }
   }

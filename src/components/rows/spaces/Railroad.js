@@ -2,7 +2,7 @@ import React from "react";
 
 const Railroad = props => {
   return (
-    <div className="space railroad">
+    <div id={props.space.id} className="space railroad">
       <div className="container">
         <div className="name long-name">{props.space.name}</div>
         <i className="drawing fas fa-subway"></i>

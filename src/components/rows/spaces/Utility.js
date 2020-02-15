@@ -3,6 +3,7 @@ import React from "react";
 const Utility = props => {
   return (
     <div
+      id={props.space.id}
       className={`space utility ${
         props.space.type === "electric" ? "electric-company" : "waterworks"
       }`}

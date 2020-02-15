@@ -3,6 +3,7 @@ import React from "react";
 const Fee = props => {
   return (
     <div
+      id={props.space.id}
       className={`space fee ${
         props.space.type === "luxury" ? "luxury-tax" : "income-tax"
       }`}

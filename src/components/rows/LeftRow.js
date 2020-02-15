@@ -1,17 +1,18 @@
 import React, { useContext } from "react";
 import Property from "./spaces/Property";
-import ActionCard from "./spaces/ActionCard";
+import Action from "./spaces/Action";
 import Railroad from "./spaces/Railroad";
 import Utility from "./spaces/Utility";
 import { GameContext } from "../../contexts/GameContext";
 
 const LeftRow = () => {
-  const { SpaceList } = useContext(GameContext);
+  const { Game } = useContext(GameContext);
+  let SpaceList = Game.SpaceList;
   return (
     <div className="row vertical-row left-row">
       <Property space={SpaceList[17]} />
       <Property space={SpaceList[16]} />
-      <ActionCard space={SpaceList[15]} />
+      <Action space={SpaceList[15]} />
       <Property space={SpaceList[14]} />
       <Railroad space={SpaceList[13]} />
       <Property space={SpaceList[12]} />
