@@ -113,7 +113,7 @@ const SpaceCard = () => {
                 <div className="mortgage">Mortgage Value</div>
                 <div className="value">
                   <span className="million">₩</span>
-                  {<cardSpace className="mortgageValue"></cardSpace>}
+                  {cardSpace.mortgageValue}
                 </div>
               </div>
               <div className="copyright"> &copy; 2020 Tommy, Inc.</div>
@@ -138,16 +138,10 @@ const SpaceCard = () => {
                   dice.
                 </p>
               </div>
-              <div className="mortgage-value">
-                <div className="mortgage">Mortgage Value</div>
-                <div className="value">
-                  <span className="million">₩</span>
-                  {cardSpace.mortgageValue}
-                </div>
-              </div>
+              <div className="copyright"> &copy; 2020 Tommy, Inc.</div>
             </div>
           ) : cardSpace.group === "fee" ? (
-            <div className="container">
+            <div className="container fee">
               {cardSpace.type === "luxury" ? (
                 <div className="name"> Luxury Tax</div>
               ) : (
@@ -156,7 +150,9 @@ const SpaceCard = () => {
               {cardSpace.type === "luxury" ? (
                 <div className="drawing fa fa-diamond"></div>
               ) : (
-                <div className="diamond"></div>
+                <div className="drawing">
+                  <div className="diamond"></div>
+                </div>
               )}
               {cardSpace.type === "luxury" ? (
                 <div className="instructions">
