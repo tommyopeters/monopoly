@@ -1,23 +1,90 @@
 [
   {
     "name": "Advance to 'Go'",
-    "action": "collect",
-    "amount": 200,
+    "action": "move",
+    "destination": "go ",
     "icon": "monopoly-goes-to-go"
   },
   {
-    "name": "Bank error in your favor. Collect <span className='million'>₩</span>200",
+    "name": "GTBank pays you interest on your savings account. Collect <span className='million'>₩</span>200",
     "action": "collect",
     "amount": 200,
     "icon": "placeholder"
   },
   {
-    "name": "Doctor's fees. Pay <span className='million'>₩</span>50",
+    "name": "For riding okada without your helmet on, pay a fine of <span className='million'>₩</span>50",
     "action": "pay",
     "amount": 50,
     "icon": "placeholder"
   },
   {
-    "name": "Get Out of Jail Free. This card may be kept until needed or sold/traded. "
+    "name": "For calling 767 and saving a life, receive $50.",
+    "action": "collect",
+    "amount": 50,
+    "icon": "placeholder"
+  },
+  {
+    "name": "Get Out of Kirikiri Jail Free. This card may be kept until needed or sold/traded.",
+    "action": "jail-free",
+    "icon": "placeholder"
+  },
+  {
+    "name": "Go to Jail. Go directly to Kirikiri jail. Do not pass 'Go', Do not collect $200.",
+    "action": "jail"
+  },
+  {
+    "name": "Park! Park! For Reckless driving, pay a fine of $50 and register at the Lagos State Driver's institute (LASDRI) for retraining.",
+    "action": "pay",
+    "amount": 50,
+    "icon": "placeholder"
+  },
+  {
+    "name": "Pay $50 for Lagos State land use charge",
+    "action": "pay",
+    "amount": 50,
+    "icon": "placeholder"
+  },
+  {
+    "name": "July 14 is tree planting day! For Planting a tree, collect $50",
+    "action": "collect",
+    "amount": 50,
+    "icon": "placeholder"
+  },
+  {
+    "name": "LIRS income tax refund. Collect $20",
+    "action": "collect",
+    "amount": 20,
+    "icon": "placeholder"
+  },
+  {
+    "name": "Your mansard motor classic claim has been processed. Collect $100.",
+    "action": "collect",
+    "amount": 100,
+    "icon":"placeholder"
+  },
+  {
+    "name": "FSDH Coral Growth fund declares dividend. Collect $100.",
+    "action": "collect",
+    "amount": 100,
+    "icon":"placeholder"
+  },
+  {
+    "name": "It's your anniversary. Receive firstbank's firstmonie credit transfer of $10 from each player.",
+    "action": "collect-player",
+    "amount": 10,
+    "icon":"placeholder"
+  },
+  {
+    "name": "You are assessed for flooding damage repairs. $40 per house. $115 per hotel",
+    "action": "pay-bulk",
+    "amount-per-house" : 40,
+    "amount-per-hotel" : 115,
+    "icon":"placeholder"
+  },
+  {
+    "name": "School Fees. Pay $100.",
+    "action": "pay",
+    "amount": 100,
+    "icon":"placeholder"
   }
 ]
