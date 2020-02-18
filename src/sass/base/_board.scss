@@ -198,10 +198,11 @@ body {
     transform: rotate(315deg);
   }
   .instructions {
-    padding: 5px 25px;
+    padding: 0px 25px 5px 25px;
   }
 
   .go-word {
+    font-family: "Oswald";
     font-size: 50px;
     color: red;
     transform: translateY(-30%);
@@ -218,7 +219,7 @@ body {
     display: grid;
     flex-direction: column;
     transform: rotate(135deg);
-    padding: 0.3rem 0;
+    padding-bottom: 1rem;
   }
 
   .name {
@@ -284,7 +285,7 @@ body {
   }
 
   .visiting {
-    grid-column: 5 / 8;
+    grid-column: 5 / 9;
     grid-row: 9;
   }
 

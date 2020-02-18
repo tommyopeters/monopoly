@@ -5,7 +5,7 @@ import Chest from "../../../assets/svgs/chest.svg";
 const ActionCard = props => {
   return (
     <div
-      id={props.space.id}
+      id={props.space.spaceId}
       className={`space ${
         props.space.type === "chance" ? "chance" : "community-chest"
       }`}

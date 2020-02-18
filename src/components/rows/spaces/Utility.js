@@ -3,14 +3,14 @@ import React from "react";
 const Utility = props => {
   return (
     <div
-      id={props.space.id}
+      id={props.space.spaceId}
       className={`space utility ${
         props.space.type === "electric" ? "electric-company" : "waterworks"
       }`}
     >
       <div className="container">
         <div className="name">
-          {props.space.type === "electric" ? "electric company" : "waterworks"}
+          {props.space.type === "electric" ? "electric company" : "water works"}
         </div>
         {props.space.type === "electric" ? (
           <i className="drawing far fa-lightbulb"></i>

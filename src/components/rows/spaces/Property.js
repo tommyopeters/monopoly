@@ -2,7 +2,7 @@ import React from "react";
 
 const Property = props => {
   return (
-    <div id={props.space.id} className="space property">
+    <div id={props.space.spaceId} className="space property">
       <div className="container">
         <div className={props.space.color + " color-bar"}></div>
         <div

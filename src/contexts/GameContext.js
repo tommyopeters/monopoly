@@ -13,10 +13,11 @@ class GameContextProvider extends Component {
   };
 
   setSpaceCard = space => {
+    space *= 1;
     this.setState({
       SpaceCard: {
         display: true,
-        space: this.state.Game.SpaceList[space]
+        space: this.state.Game.SpaceList.find(el => el.spaceId === space)
       }
     });
   };

@@ -101,12 +101,16 @@ const SpaceCard = () => {
                   <div className="rent-price">{cardSpace.rent[1]}</div>
                 </div>
                 <div className="rent-row">
-                  <div className="rent-number">If 3 '' '' ''</div>
+                  <div className="rent-number">
+                    If 3 &nbsp;'' &nbsp; &nbsp; '' &nbsp; &nbsp; &nbsp;''
+                  </div>
                   <div className="rent-price">{cardSpace.rent[2]}</div>
                 </div>
                 <div className="rent-row">
-                  <div className="rent-number">If 2 '' '' ''</div>
-                  <div className="rent-price">{cardSpace.rent[2]}</div>
+                  <div className="rent-number">
+                    If 4 &nbsp;'' &nbsp; &nbsp; '' &nbsp; &nbsp; &nbsp;''
+                  </div>
+                  <div className="rent-price">{cardSpace.rent[3]}</div>
                 </div>
               </div>
               <div className="mortgage-value">
