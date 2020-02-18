@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Advance to 'Go'",
+    "action": "collect",
+    "amount": 200,
+    "icon": "monopoly-goes-to-go"
+  },
+  {
+    "name": "Bank error in your favor. Collect <span className='million'>₩</span>200",
+    "action": "collect",
+    "amount": 200,
+    "icon": "placeholder"
+  },
+  {
+    "name": "Doctor's fees. Pay <span className='million'>₩</span>50",
+    "action": "pay",
+    "amount": 50,
+    "icon": "placeholder"
+  },
+  {
+    "name": "Get Out of Jail Free. This card may be kept until needed or sold/traded. "
+  }
+]
