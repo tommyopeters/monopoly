@@ -9,7 +9,8 @@ class GameContextProvider extends Component {
     Game: new GameEngine(SpaceList),
     SpaceCard: {
       display: false
-    }
+    },
+    SpacePositions: { board: 0 }
   };
 
   setSpaceCard = space => {
@@ -19,6 +20,15 @@ class GameContextProvider extends Component {
         display: true,
         space: this.state.Game.SpaceList.find(el => el.spaceId === space)
       }
+    });
+  };
+  setSpacePositions = spacePositions => {
+    let spaces = this.state.SpacePositions;
+    for (let key in spacePositions) {
+      spaces[key] = spacePositions[key];
+    }
+    this.setState({
+      Space: spaces
     });
   };
   removeSpaceCard = () => {
@@ -35,7 +45,8 @@ class GameContextProvider extends Component {
         value={{
           ...this.state,
           setSpaceCard: this.setSpaceCard,
-          removeSpaceCard: this.removeSpaceCard
+          removeSpaceCard: this.removeSpaceCard,
+          setSpacePositions: this.setSpacePositions
         }}
       >
         {this.props.children}

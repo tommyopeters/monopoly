@@ -35,6 +35,7 @@ class Board extends Component {
     });
 
     let allSpaces = document.querySelectorAll(".space");
+
     allSpaces.forEach(space => {
       if (!space.classList.contains("corner")) {
         space.addEventListener("click", e => {
@@ -44,7 +45,30 @@ class Board extends Component {
         });
       }
     });
+
+    //First instance
+    let board = document.querySelector(".board");
+    let boardDetails = board.getBoundingClientRect();
+    let spacePositions = {};
+    spacePositions["board"] = boardDetails.toJSON();
+    allSpaces.forEach(space => {
+      spacePositions[space.id] = space.getBoundingClientRect().toJSON();
+    });
+    this.context.setSpacePositions(spacePositions);
+
+    //Consequent Instances
+    window.addEventListener("resize", e => {
+      let board = document.querySelector(".board");
+      let boardDetails = board.getBoundingClientRect();
+      let spacePositions = {};
+      spacePositions["board"] = boardDetails.toJSON();
+      allSpaces.forEach(space => {
+        spacePositions[space.id] = space.getBoundingClientRect().toJSON();
+      });
+      this.context.setSpacePositions(spacePositions);
+    });
   }
+
   render() {
     return (
       <div className="board">

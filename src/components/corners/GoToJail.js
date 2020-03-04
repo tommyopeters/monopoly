@@ -3,7 +3,7 @@ import Police from "../../assets/svgs/police.svg";
 
 const GoToJail = () => {
   return (
-    <div className="space corner go-to-jail">
+    <div className="space corner go-to-jail" id={30}>
       <div className="container">
         <div className="name">Go To</div>
         <div className="drawing">

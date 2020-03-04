@@ -2,7 +2,7 @@ import React from "react";
 
 const Jail = () => {
   return (
-    <div className="space corner jail">
+    <div className="space corner jail" id={10}>
       <div className="just">Just</div>
       <div className="drawing">
         <div className="container">

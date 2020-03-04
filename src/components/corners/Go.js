@@ -3,7 +3,7 @@ import Arrow from "../../assets/svgs/go-arrow.svg";
 
 const Go = () => {
   return (
-    <div className="space corner go">
+    <div className="space corner go" id={0}>
       <div className="container">
         <div className="instructions">Collect $200.00 salary as you pass</div>
         <div className="go-word">go</div>
