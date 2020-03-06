@@ -10,7 +10,7 @@ class GameContextProvider extends Component {
     SpaceCard: {
       display: false
     },
-    SpacePositions: { board: 0 }
+    SpacePositions: {}
   };
 
   setSpaceCard = space => {
@@ -28,8 +28,10 @@ class GameContextProvider extends Component {
       spaces[key] = spacePositions[key];
     }
     this.setState({
-      Space: spaces
+      SpacePositions: spaces
     });
+
+    console.log(this.state.SpacePositions);
   };
   removeSpaceCard = () => {
     this.setState({

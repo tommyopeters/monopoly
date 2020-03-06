@@ -10,6 +10,7 @@ import BottomRow from "./rows/BottomRow";
 import Center from "./Center";
 import { GameContext } from "../contexts/GameContext";
 import SpaceCard from "./SpaceCard";
+import TokenContainer from "./TokenContainer";
 
 class Board extends Component {
   static contextType = GameContext;
@@ -82,6 +83,7 @@ class Board extends Component {
         <GoToJail />
         <RightRow />
         {this.context.SpaceCard.display ? <SpaceCard /> : null}
+        <TokenContainer />
       </div>
     );
   }
