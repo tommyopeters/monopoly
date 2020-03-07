@@ -8,17 +8,11 @@ const TokenContainer = () => {
   let spaceClones = [];
   for (let space in SpacePositions) {
     if (space !== "board") {
-      let realPosition = {};
-      realPosition.x = SpacePositions[space].x - SpacePositions["board"].x - 1;
-      realPosition.y = SpacePositions[space].y - SpacePositions["board"].y - 2;
-      realPosition.height = SpacePositions[space].height;
-      realPosition.width = SpacePositions[space].width;
       spaceClones.push(
-        <PlayerTokens key={space} id={space} settings={realPosition} />
+        <PlayerTokens key={space} id={space} settings={SpacePositions[space]} />
       );
     }
   }
-  console.log(spaceClones);
   return <div className="token-container">{spaceClones}</div>;
 };
 

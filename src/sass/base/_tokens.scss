@@ -1,0 +1,54 @@
+.token-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  .clone-of {
+    display: grid;
+  }
+  .bottom-row-clones {
+    padding: 0.2rem 0.1rem;
+    grid-template-rows: 20% 1fr;
+
+    .clone-houses {
+      // background-color: red;
+    }
+    .clone-players {
+      // background-color: green;
+    }
+  }
+  .top-row-clones {
+    padding: 0 0.1rem 0.2rem 0.1rem;
+    grid-template-rows: 1fr 20%;
+
+    .clone-houses {
+      grid-row: 2/ 3;
+    }
+    .clone-players {
+      grid-row: 1/2;
+    }
+  }
+  .left-row-clones {
+    padding: 0.1rem 0.2rem 0.1rem 0;
+    grid-template-columns: 1fr 20%;
+
+    .clone-houses {
+      grid-column: 2/ 3;
+      grid-row: 1/ 2;
+    }
+    .clone-players {
+      grid-column: 1/2;
+      grid-row: 1/ 2;
+    }
+  }
+  .right-row-clones {
+    padding: 0.1rem 0 0.1rem 0.2rem;
+    grid-template-columns: 20% 1fr;
+
+    .clone-houses {
+    }
+    .clone-players {
+    }
+  }
+}
