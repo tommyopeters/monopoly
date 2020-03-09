@@ -5,9 +5,9 @@
   pointer-events: none;
 
   .clone-of {
-    display: grid;
   }
   .bottom-row-clones {
+    display: grid;
     padding: 0.2rem 0.1rem;
     grid-template-rows: 20% 1fr;
 
@@ -19,6 +19,7 @@
     }
   }
   .top-row-clones {
+    display: grid;
     padding: 0 0.1rem 0.2rem 0.1rem;
     grid-template-rows: 1fr 20%;
 
@@ -30,6 +31,7 @@
     }
   }
   .left-row-clones {
+    display: grid;
     padding: 0.1rem 0.2rem 0.1rem 0;
     grid-template-columns: 1fr 20%;
 
@@ -43,6 +45,7 @@
     }
   }
   .right-row-clones {
+    display: grid;
     padding: 0.1rem 0 0.1rem 0.2rem;
     grid-template-columns: 20% 1fr;
 
