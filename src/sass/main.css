@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
@@ -14,7 +14,7 @@ html {
 
 body {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #fafaf8;
   font-size: 1rem;
   font-weight: 400;
@@ -64,10 +64,8 @@ body {
 .board {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 125px (80px)[9] 125px;
-      grid-template-columns: 125px repeat(9, 80px) 125px;
-  -ms-grid-rows: 125px (80px)[9] 125px;
-      grid-template-rows: 125px repeat(9, 80px) 125px;
+  grid-template-columns: 125px repeat(9, 80px) 125px;
+  grid-template-rows: 125px repeat(9, 80px) 125px;
   grid-gap: 2px;
   margin: auto;
   width: 994px;
@@ -86,14 +84,14 @@ body {
   background: #cce3c6;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[7];
-      grid-template-columns: repeat(7, 1fr);
-  -ms-grid-rows: (1fr)[7];
-      grid-template-rows: repeat(7, 1fr);
+
+  grid-template-columns: repeat(7, 1fr);
+
+  grid-template-rows: repeat(7, 1fr);
   justify-items: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .center .title-box {
@@ -104,11 +102,11 @@ body {
   grid-row: 4;
   background: #ed1b24;
   -webkit-transform: rotateZ(-45deg);
-          transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
   border: 3px solid black;
   text-align: center;
   -webkit-box-shadow: inset 0px 2px 12px 0px white;
-          box-shadow: inset 0px 2px 12px 0px white;
+  box-shadow: inset 0px 2px 12px 0px white;
 }
 
 .center .title-box .title {
@@ -129,7 +127,7 @@ body {
   -ms-grid-row-span: 2;
   grid-row: 2 / 4;
   -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(135deg);
   margin-bottom: 60px;
   margin-right: 60px;
 }
@@ -142,7 +140,7 @@ body {
   -ms-grid-row-span: 2;
   grid-row: 5 / 7;
   -webkit-transform: rotate(315deg);
-          transform: rotate(315deg);
+  transform: rotate(315deg);
   margin-top: 60px;
   margin-left: 60px;
 }
@@ -166,42 +164,66 @@ body {
 }
 
 .center .deck .card-blue {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4ccaf4), to(#a3dff9));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#4ccaf4),
+    to(#a3dff9)
+  );
   background: linear-gradient(#4ccaf4, #a3dff9);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .center .deck .card-blue-inside {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a3dff9), to(#4ccaf4));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#a3dff9),
+    to(#4ccaf4)
+  );
   background: linear-gradient(#a3dff9, #4ccaf4);
   width: 94%;
   height: 94%;
 }
 
 .center .deck .card-orange {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f99120), to(#f57420));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f99120),
+    to(#f57420)
+  );
   background: linear-gradient(#f99120, #f57420);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .center .deck .card-orange-inside {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f57420), to(#f99120));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f57420),
+    to(#f99120)
+  );
   background: linear-gradient(#f57420, #f99120);
   width: 94%;
   height: 94%;
@@ -216,13 +238,11 @@ body {
 }
 
 .horizontal-row {
-  -ms-grid-columns: (80px)[9];
-      grid-template-columns: repeat(9, 80px);
+  grid-template-columns: repeat(9, 80px);
 }
 
 .vertical-row {
-  -ms-grid-rows: (80px)[9];
-      grid-template-rows: repeat(9, 80px);
+  grid-template-rows: repeat(9, 80px);
 }
 
 .vertical-row .container {
@@ -249,7 +269,7 @@ body {
 
 .left-row .container {
   -webkit-transform: translate(-50%, -50%) rotate(90deg);
-          transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .top-row {
@@ -262,7 +282,7 @@ body {
 
 .top-row .container {
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .right-row {
@@ -275,7 +295,7 @@ body {
 
 .right-row .container {
   -webkit-transform: translate(-50%, -50%) rotate(270deg);
-          transform: translate(-50%, -50%) rotate(270deg);
+  transform: translate(-50%, -50%) rotate(270deg);
 }
 
 .space {
@@ -288,14 +308,14 @@ body {
   display: grid;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   position: relative;
   -webkit-transform-origin: center;
-          transform-origin: center;
+  transform-origin: center;
   height: 125px;
   width: 80px;
 }
@@ -321,7 +341,7 @@ body {
 
 .corner .container {
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   height: 100%;
   width: 100%;
 }
@@ -376,10 +396,10 @@ body {
 
 .go .container {
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-transform: rotate(315deg);
-          transform: rotate(315deg);
+  transform: rotate(315deg);
 }
 
 .go .instructions {
@@ -407,16 +427,16 @@ body {
   grid-row: 11 / 12;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (12.5px)[10];
-      grid-template-columns: repeat(10, 12.5px);
-  -ms-grid-rows: (12.5px)[10];
-      grid-template-rows: repeat(10, 12.5px);
+  -ms-grid-columns: (12.5px) [10];
+  grid-template-columns: repeat(10, 12.5px);
+
+  grid-template-rows: repeat(10, 12.5px);
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .jail .drawing {
@@ -439,7 +459,7 @@ body {
   -ms-grid-row: 4;
   grid-row: 4;
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
   padding-top: 5px;
 }
 
@@ -453,10 +473,10 @@ body {
 
 .jail .container {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .jail .name {
@@ -468,10 +488,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   width: 55px;
   height: 55px;
@@ -482,7 +502,7 @@ body {
 .jail .person {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   font-size: 40px;
@@ -504,10 +524,10 @@ body {
 
 .free-parking .container {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 .free-parking .name {
@@ -530,10 +550,10 @@ body {
 
 .go-to-jail .container {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-transform: rotate(225deg);
-          transform: rotate(225deg);
+  transform: rotate(225deg);
 }
 
 .go-to-jail .name {
@@ -549,8 +569,8 @@ body {
 
 .chance .container {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .chance .drawing {
@@ -564,7 +584,7 @@ body {
 
 .community-chest .container {
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .community-chest .drawing {
@@ -586,11 +606,11 @@ body {
 
 .income-tax .container {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .income-tax .name {
@@ -602,7 +622,7 @@ body {
   height: 5px;
   background: #080808;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   display: inline-block;
 }
 
@@ -635,7 +655,7 @@ body {
   top: 0;
   left: 50%;
   -webkit-transform: translate(-50%, -95%);
-          transform: translate(-50%, -95%);
+  transform: translate(-50%, -95%);
 }
 
 .red-player {

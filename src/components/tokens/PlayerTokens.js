@@ -15,8 +15,11 @@ const PlayerTokens = props => {
       class={`clone-of ${props.settings.row ? props.settings.row : null}`}
       style={style}
     >
-      <div className="clone-houses"></div>
-      <div className="clone-players"></div>
+      <div className="clone-container">
+        <div className="clone-houses"></div>
+        <div className="clone-players"></div>
+        <div className="clone-owner"></div>
+      </div>
     </div>
   );
 };

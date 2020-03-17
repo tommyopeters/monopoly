@@ -5,53 +5,115 @@
   pointer-events: none;
 
   .clone-of {
+    overflow: visible;
+    .clone-container {
+      overflow: visible;
+      height: 100%;
+      width: 100%;
+      display: grid;
+      position: relative;
+
+      .clone-owner {
+        position: absolute;
+      }
+    }
   }
   .bottom-row-clones {
-    display: grid;
-    padding: 0.2rem 0.1rem;
-    grid-template-rows: 20% 1fr;
+    .clone-container {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      padding: 0.2rem 0.1rem;
+      grid-template-rows: 20% 1fr;
 
-    .clone-houses {
-      // background-color: red;
-    }
-    .clone-players {
-      // background-color: green;
+      .clone-houses {
+        // background-color: red;
+      }
+      .clone-players {
+        // background-color: green;
+      }
+      .clone-owner {
+        // background-color: purple;
+        width: 30%;
+        height: 20%;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+      }
     }
   }
   .top-row-clones {
-    display: grid;
-    padding: 0 0.1rem 0.2rem 0.1rem;
-    grid-template-rows: 1fr 20%;
+    .clone-container {
+      display: grid;
+      padding: 0 0.1rem 0.2rem 0.1rem;
+      grid-template-rows: 1fr 20%;
 
-    .clone-houses {
-      grid-row: 2/ 3;
-    }
-    .clone-players {
-      grid-row: 1/2;
+      .clone-houses {
+        grid-row: 2/ 3;
+        // background-color: red;
+      }
+      .clone-players {
+        grid-row: 1/2;
+        // background-color: green;
+      }
+      .clone-owner {
+        // background-color: purple;
+        width: 30%;
+        height: 20%;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%, 100%);
+      }
     }
   }
   .left-row-clones {
-    display: grid;
-    padding: 0.1rem 0.2rem 0.1rem 0;
-    grid-template-columns: 1fr 20%;
+    .clone-container {
+      display: grid;
+      padding: 0.1rem 0.2rem 0.1rem 0;
+      grid-template-columns: 1fr 20%;
+      grid-template-rows: 1fr;
 
-    .clone-houses {
-      grid-column: 2/ 3;
-      grid-row: 1/ 2;
-    }
-    .clone-players {
-      grid-column: 1/2;
-      grid-row: 1/ 2;
+      .clone-houses {
+        grid-column: 2/ 3;
+        grid-row: 1/ 2;
+        // background-color: red;
+      }
+      .clone-players {
+        grid-column: 1/2;
+        grid-row: 1/ 2;
+        // background-color: green;
+      }
+      .clone-owner {
+        // background-color: purple;
+        width: 20%;
+        height: 30%;
+        top: 50%;
+        right: 0%;
+        transform: translate(100%, -50%);
+      }
     }
   }
   .right-row-clones {
-    display: grid;
-    padding: 0.1rem 0 0.1rem 0.2rem;
-    grid-template-columns: 20% 1fr;
+    .clone-container {
+      display: grid;
+      padding: 0.1rem 0 0.1rem 0.2rem;
+      grid-template-columns: 20% 1fr;
+      grid-template-rows: 1fr;
 
-    .clone-houses {
-    }
-    .clone-players {
+      .clone-houses {
+        // background-color: red;
+      }
+      .clone-players {
+        // background-color: green;
+      }
+      .clone-owner {
+        // background-color: purple;
+        width: 20%;
+        height: 30%;
+        top: 50%;
+        left: 0%;
+        transform: translate(-100%, -50%);
+      }
     }
   }
 }
