@@ -15,6 +15,9 @@
 
       .clone-owner {
         position: absolute;
+        img {
+          height: 100%;
+        }
       }
     }
   }
@@ -63,6 +66,10 @@
         bottom: 0%;
         left: 50%;
         transform: translate(-50%, 100%);
+
+        img {
+          transform: rotate(180deg);
+        }
       }
     }
   }
@@ -90,6 +97,10 @@
         top: 50%;
         right: 0%;
         transform: translate(100%, -50%);
+
+        img {
+          transform: rotate(90deg);
+        }
       }
     }
   }
@@ -113,6 +124,10 @@
         top: 50%;
         left: 0%;
         transform: translate(-100%, -50%);
+
+        img {
+          transform: rotate(270deg);
+        }
       }
     }
   }
