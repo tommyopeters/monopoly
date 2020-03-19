@@ -1,16 +1,41 @@
 import React, { Component, createContext } from "react";
+
 import SpaceList from "../engine/SpaceList.json";
-import GameEngine from "../engine/Game";
 
 export const GameContext = createContext();
 
 class GameContextProvider extends Component {
   state = {
-    Game: new GameEngine(SpaceList),
+    Game: {
+      Players: [],
+      SpaceList
+    },
     SpaceCard: {
       display: false
     },
     SpacePositions: {}
+  };
+
+  setInitialPlayers = players => {
+    let gameClone = this.state.Game;
+    players.forEach(player => {
+      gameClone.Players.push({
+        id: gameClone.Players.length,
+        name: player.name,
+        icon: player.icon,
+        color: player.color,
+        properties: [],
+        wallet: 1500,
+        debt: 0,
+        jailed: false,
+        currentPosition: 0,
+        finalPosition: 0
+      });
+    });
+
+    this.setState({
+      Game: gameClone
+    });
   };
 
   setSpaceCard = space => {
@@ -83,14 +108,25 @@ class GameContextProvider extends Component {
     });
   };
 
+  setPlayerPosition = (playerIndex, playerPosition) => {
+    let gameClone = { ...this.state.Game };
+    gameClone.Players[playerIndex].currentPosition = playerPosition;
+
+    this.setState({
+      Game: gameClone
+    });
+  };
+
   render() {
     return (
       <GameContext.Provider
         value={{
           ...this.state,
+          setInitialPlayers: this.setInitialPlayers,
           setSpaceCard: this.setSpaceCard,
           removeSpaceCard: this.removeSpaceCard,
-          setSpacePositions: this.setSpacePositions
+          setSpacePositions: this.setSpacePositions,
+          setPlayerPosition: this.setPlayerPosition
         }}
       >
         {this.props.children}

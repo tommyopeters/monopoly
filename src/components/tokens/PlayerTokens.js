@@ -11,12 +11,10 @@ const PlayerTokens = props => {
     width: props.settings.width
   };
 
-  console.log(props.settings.owner);
-
   return (
     <div
       id={`clone-of-${props.id}`}
-      class={`clone-of ${props.settings.row ? props.settings.row : null}`}
+      className={`clone-of ${props.settings.row ? props.settings.row : null}`}
       style={style}
     >
       <div className="clone-container">

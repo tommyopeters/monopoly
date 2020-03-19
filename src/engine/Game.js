@@ -26,7 +26,7 @@ export default class Game {
   startTurn() {
     let dice = this.diceroll;
     this.movePlayer(dice);
-    this.resolveSpace();
+    // this.resolveSpace();
   }
 
   diceroll() {

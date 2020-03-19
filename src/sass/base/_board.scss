@@ -562,6 +562,8 @@ body {
 //Space Card / Property Card
 .space-card-background {
   position: absolute;
+
+  z-index: 50;
   top: 0;
   right: 0;
   height: 100%;

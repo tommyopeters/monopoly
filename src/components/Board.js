@@ -15,6 +15,7 @@ import TokenContainer from "./TokenContainer";
 class Board extends Component {
   static contextType = GameContext;
   componentDidMount() {
+    //---------------------------------------------------------------------DOM Definitions
     let leftRowSpaces = document.querySelectorAll(".left-row .space");
     let leftRowContainers = document.querySelectorAll(
       ".left-row .space .container"
@@ -46,8 +47,9 @@ class Board extends Component {
         });
       }
     });
+    //----------------------------------------------------------------End of DOM Definitions
 
-    //First instance
+    //-----------------------------------------------------------------First instance of setting Space Positions
     let board = document.querySelector(".board");
     let boardDetails = board.getBoundingClientRect();
     let spacePositions = {};
@@ -57,7 +59,7 @@ class Board extends Component {
     });
     this.context.setSpacePositions(spacePositions);
 
-    //Consequent Instances
+    //---------------------------------------------------------------------Consequent Instances
     window.addEventListener("resize", e => {
       let board = document.querySelector(".board");
       let boardDetails = board.getBoundingClientRect();
@@ -68,6 +70,23 @@ class Board extends Component {
       });
       this.context.setSpacePositions(spacePositions);
     });
+
+    // START GAMEEEEEEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!---------------------------------------------------
+    this.context.setInitialPlayers([
+      {
+        name: "Tommy",
+        icon: "knight",
+        color: "red"
+      },
+      {
+        name: "David",
+        icon: "pawn",
+        color: "blue"
+      }
+    ]);
+
+    this.context.setPlayerPosition(0, 3);
+    console.log(this.context);
   }
 
   render() {
