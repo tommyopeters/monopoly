@@ -10,7 +10,7 @@ class GameContextProvider extends Component {
       Players: [],
       SpaceList
     },
-    SpaceCard: {
+    InfoCard: {
       display: false
     },
     SpacePositions: {}
@@ -38,16 +38,6 @@ class GameContextProvider extends Component {
     });
   };
 
-  setSpaceCard = space => {
-    space *= 1;
-
-    this.setState({
-      SpaceCard: {
-        display: true,
-        space: this.state.Game.SpaceList.find(el => el.spaceId === space)
-      }
-    });
-  };
   setSpacePositions = spacePositions => {
     let spaces = this.state.SpacePositions;
     for (let key in spacePositions) {
@@ -101,9 +91,21 @@ class GameContextProvider extends Component {
     console.log(spaces);
     console.log(this.state.SpacePositions);
   };
-  removeSpaceCard = () => {
+
+  // Showing Card information
+  setInfoCard = space => {
+    space *= 1;
+
     this.setState({
-      SpaceCard: {
+      InfoCard: {
+        display: true,
+        space: this.state.Game.SpaceList.find(el => el.spaceId === space)
+      }
+    });
+  };
+  removeInfoCard = () => {
+    this.setState({
+      InfoCard: {
         display: false
       }
     });
@@ -124,8 +126,8 @@ class GameContextProvider extends Component {
         value={{
           ...this.state,
           setInitialPlayers: this.setInitialPlayers,
-          setSpaceCard: this.setSpaceCard,
-          removeSpaceCard: this.removeSpaceCard,
+          setInfoCard: this.setInfoCard,
+          removeInfoCard: this.removeInfoCard,
           setSpacePositions: this.setSpacePositions,
           setPlayerPosition: this.setPlayerPosition
         }}

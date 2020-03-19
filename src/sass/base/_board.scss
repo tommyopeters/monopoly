@@ -560,7 +560,7 @@ body {
 }
 
 //Space Card / Property Card
-.space-card-background {
+.info-card-background {
   position: absolute;
 
   z-index: 50;
@@ -573,11 +573,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  .space-card {
+  .info-card {
     background-color: white;
     width: max-content;
   }
-  .space-card {
+  .info-card {
     height: 60%;
     width: 40%;
     padding: 1.5rem;

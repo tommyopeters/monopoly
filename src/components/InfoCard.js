@@ -4,25 +4,25 @@ import { GameContext } from "../contexts/GameContext";
 import Chance from "../assets/svgs/chance.svg";
 import Chest from "../assets/svgs/chest.svg";
 
-const SpaceCard = () => {
+const InfoCard = () => {
   const GameEngine = useContext(GameContext);
-  const card = GameEngine.SpaceCard;
+  const card = GameEngine.InfoCard;
   const cardSpace = card.space;
 
-  function closeSpaceCard(e) {
-    if (e.target === document.querySelector(".space-card-background")) {
-      GameEngine.removeSpaceCard();
+  function closeInfoCard(e) {
+    if (e.target === document.querySelector(".info-card-background")) {
+      GameEngine.removeInfoCard();
     }
   }
 
   return (
     <div
-      className="space-card-background"
+      className="info-card-background"
       onClick={e => {
-        closeSpaceCard(e);
+        closeInfoCard(e);
       }}
     >
-      <div className="space-card">
+      <div className="info-card">
         <div className="outer-container">
           {cardSpace.group === "property" ? (
             <div className="container property">
@@ -192,4 +192,4 @@ const SpaceCard = () => {
   );
 };
 
-export default SpaceCard;
+export default InfoCard;

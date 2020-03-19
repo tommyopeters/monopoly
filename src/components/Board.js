@@ -9,7 +9,7 @@ import RightRow from "./rows/RightRow";
 import BottomRow from "./rows/BottomRow";
 import Center from "./Center";
 import { GameContext } from "../contexts/GameContext";
-import SpaceCard from "./SpaceCard";
+import InfoCard from "./InfoCard";
 import TokenContainer from "./TokenContainer";
 
 class Board extends Component {
@@ -42,7 +42,7 @@ class Board extends Component {
       if (!space.classList.contains("corner")) {
         space.addEventListener("click", e => {
           if (space === e.target || space.contains(e.target)) {
-            this.context.setSpaceCard(space.id);
+            this.context.setInfoCard(space.id);
           }
         });
       }
@@ -101,7 +101,7 @@ class Board extends Component {
         <TopRow />
         <GoToJail />
         <RightRow />
-        {this.context.SpaceCard.display ? <SpaceCard /> : null}
+        {this.context.InfoCard.display ? <InfoCard /> : null}
         <TokenContainer />
       </div>
     );
