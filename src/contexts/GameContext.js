@@ -69,7 +69,8 @@ class GameContextProvider extends Component {
           spaces[key].group = extraInfo.group;
           if (
             extraInfo.group === "property" ||
-            extraInfo.group === "railroad"
+            extraInfo.group === "railroad" ||
+            extraInfo.group === "utility"
           ) {
             spaces[key].owner = extraInfo.owner;
             if (extraInfo.group === "property") {
