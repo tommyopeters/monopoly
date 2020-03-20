@@ -1,9 +1,9 @@
 import React from "react";
 import Car from "../../assets/svgs/parking.svg";
 
-const Parking = () => {
+const Parking = props => {
   return (
-    <div className="space corner free-parking" id={20}>
+    <div className="space corner free-parking" id={props.space.spaceId}>
       <div className="container">
         <div className="name">Free</div>
         <div className="drawing">

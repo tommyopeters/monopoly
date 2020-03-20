@@ -10,15 +10,15 @@ const TopRow = props => {
   let SpaceList = Game.SpaceList;
   return (
     <div className="row horizontal-row top-row">
-      <Property space={SpaceList[18]} />
-      <Action space={SpaceList[19]} />
-      <Property space={SpaceList[20]} />
       <Property space={SpaceList[21]} />
-      <Railroad space={SpaceList[22]} />
+      <Action space={SpaceList[22]} />
       <Property space={SpaceList[23]} />
       <Property space={SpaceList[24]} />
-      <Utility space={SpaceList[25]} />
+      <Railroad space={SpaceList[25]} />
       <Property space={SpaceList[26]} />
+      <Property space={SpaceList[27]} />
+      <Utility space={SpaceList[28]} />
+      <Property space={SpaceList[29]} />
     </div>
   );
 };

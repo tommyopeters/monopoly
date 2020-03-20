@@ -11,15 +11,15 @@ const RightRow = () => {
 
   return (
     <div className="row vertical-row right-row">
-      <Property space={SpaceList[27]} />
-      <Property space={SpaceList[28]} />
-      <Action space={SpaceList[29]} />
-      <Property space={SpaceList[30]} />
-      <Railroad space={SpaceList[31]} />
-      <Action space={SpaceList[32]} />
-      <Property space={SpaceList[33]} />
-      <Fee space={SpaceList[34]} />
-      <Property space={SpaceList[35]} />
+      <Property space={SpaceList[31]} />
+      <Property space={SpaceList[32]} />
+      <Action space={SpaceList[33]} />
+      <Property space={SpaceList[34]} />
+      <Railroad space={SpaceList[35]} />
+      <Action space={SpaceList[36]} />
+      <Property space={SpaceList[37]} />
+      <Fee space={SpaceList[38]} />
+      <Property space={SpaceList[39]} />
     </div>
   );
 };

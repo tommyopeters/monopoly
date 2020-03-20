@@ -1,8 +1,8 @@
 import React from "react";
 
-const Jail = () => {
+const Jail = props => {
   return (
-    <div className="space corner jail" id={10}>
+    <div className="space corner jail" id={props.space.spaceId}>
       <div className="just">Just</div>
       <div className="drawing">
         <div className="container">

@@ -13,6 +13,7 @@ class GameContextProvider extends Component {
     InfoCard: {
       display: false
     },
+    originalSpacePositions: {},
     SpacePositions: {}
   };
 
@@ -36,10 +37,43 @@ class GameContextProvider extends Component {
     this.setState({
       Game: gameClone
     });
+
+    this.updatePlayerPositions();
+  };
+
+  updatePlayerPositions = () => {
+    let spaces = { ...this.state.SpacePositions };
+    let spacePositions = { ...this.state.originalSpacePositions };
+
+    console.log(this.state.originalSpacePositions);
+    console.log(spacePositions);
+    for (let key in spacePositions) {
+      if (key !== "board") {
+        let extraInfo = this.state.Game.SpaceList.find(
+          el => el.spaceId === key * 1
+        );
+        if (extraInfo) {
+          spaces[key].group = extraInfo.group;
+          spaces[key].occupants = extraInfo.occupants;
+
+          if (
+            extraInfo.group === "property" ||
+            extraInfo.group === "railroad" ||
+            extraInfo.group === "utility"
+          ) {
+            spaces[key].owner = extraInfo.owner;
+            if (extraInfo.group === "property") {
+              spaces[key].houses = extraInfo.houses;
+            }
+          }
+        }
+      }
+    }
   };
 
   setSpacePositions = spacePositions => {
     let spaces = this.state.SpacePositions;
+
     for (let key in spacePositions) {
       spaces[key] = {};
       if (key !== "board") {
@@ -57,6 +91,7 @@ class GameContextProvider extends Component {
         );
         if (extraInfo) {
           spaces[key].group = extraInfo.group;
+          spaces[key].occupants = extraInfo.occupants;
           if (
             extraInfo.group === "property" ||
             extraInfo.group === "railroad" ||
@@ -64,7 +99,6 @@ class GameContextProvider extends Component {
           ) {
             spaces[key].owner = extraInfo.owner;
             if (extraInfo.group === "property") {
-              spaces[key].occupants = extraInfo.occupants;
               spaces[key].houses = extraInfo.houses;
             }
           }
@@ -81,15 +115,18 @@ class GameContextProvider extends Component {
         if (31 <= key * 1 && key * 1 <= 39) {
           spaces[key].row = "right-row-clones";
         }
+        if (key * 1 === 0 || (key * 1) % 10 === 0) {
+          spaces[key].row = "corner";
+        }
       } else {
         spaces[key] = spacePositions[key];
       }
     }
+
     this.setState({
+      originalSpacePositions: { ...spacePositions },
       SpacePositions: spaces
     });
-    console.log(spaces);
-    console.log(this.state.SpacePositions);
   };
 
   // Showing Card information

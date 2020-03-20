@@ -1,6 +1,11 @@
 [
   {
-    "id": 0,
+    "spaceId": 0,
+    "group": "corner",
+    "name": "Go",
+    "occupants": []
+  },
+  {
     "spaceId": 1,
     "group": "property",
     "name": "Makoko",
@@ -15,13 +20,11 @@
     "mortgageStatus": false
   },
   {
-    "id": 1,
     "spaceId": 2,
     "group": "action",
     "type": "community"
   },
   {
-    "id": 2,
     "spaceId": 3,
     "name": "Agege",
     "group": "property",
@@ -36,14 +39,12 @@
     "mortgageStatus": false
   },
   {
-    "id": 3,
     "spaceId": 4,
     "group": "fee",
     "type": "income",
     "fee": 200
   },
   {
-    "id": 4,
     "spaceId": 5,
     "group": "railroad",
     "rent": [25, 50, 100, 200],
@@ -55,7 +56,6 @@
     "mortgageStatus": false
   },
   {
-    "id": 5,
     "spaceId": 6,
     "group": "property",
     "name": "Opebi",
@@ -70,13 +70,11 @@
     "mortgageStatus": false
   },
   {
-    "id": 6,
     "spaceId": 7,
     "group": "action",
     "type": "chance"
   },
   {
-    "id": 7,
     "spaceId": 8,
     "group": "property",
     "name": "Ikeja",
@@ -91,7 +89,6 @@
     "mortgageStatus": false
   },
   {
-    "id": 8,
     "spaceId": 9,
     "group": "property",
     "name": "Sabo-Yaba",
@@ -106,7 +103,12 @@
     "mortgageStatus": false
   },
   {
-    "id": 9,
+    "spaceId": 10,
+    "group": "corner",
+    "name": "Just Visiting",
+    "occupants": []
+  },
+  {
     "spaceId": 11,
     "group": "property",
     "name": "Palms Shopping Mall",
@@ -121,7 +123,6 @@
     "mortgageStatus": false
   },
   {
-    "id": 10,
     "spaceId": 12,
     "group": "utility",
     "type": "electric",
@@ -133,7 +134,6 @@
     "mortgageStatus": false
   },
   {
-    "id": 11,
     "spaceId": 13,
     "group": "property",
     "name": "Admirality Circle Plaza",
@@ -148,7 +148,6 @@
     "mortgageStatus": false
   },
   {
-    "id": 12,
     "spaceId": 14,
     "group": "property",
     "name": "Admirality Way",
@@ -163,7 +162,6 @@
     "mortgageStatus": false
   },
   {
-    "id": 13,
     "spaceId": 15,
     "group": "railroad",
     "rent": [25, 50, 100, 200],
@@ -175,7 +173,6 @@
     "mortgageStatus": false
   },
   {
-    "id": 14,
     "spaceId": 16,
     "group": "property",
     "name": "Mansard Place",
@@ -190,13 +187,11 @@
     "mortgageStatus": false
   },
   {
-    "id": 15,
     "spaceId": 17,
     "group": "action",
     "type": "community"
   },
   {
-    "id": 16,
     "spaceId": 18,
     "group": "property",
     "name": "King's College",
@@ -211,7 +206,6 @@
     "mortgageStatus": false
   },
   {
-    "id": 17,
     "spaceId": 19,
     "group": "property",
     "name": "Awolowo Road",
@@ -226,7 +220,12 @@
     "mortgageStatus": false
   },
   {
-    "id": 18,
+    "spaceId": 20,
+    "group": "corner",
+    "name": "Free Parking",
+    "occupants": []
+  },
+  {
     "spaceId": 21,
     "group": "property",
     "name": "Muson Centre",
@@ -241,13 +240,11 @@
     "mortgageStatus": false
   },
   {
-    "id": 19,
     "spaceId": 22,
     "group": "action",
     "type": "chance"
   },
   {
-    "id": 20,
     "spaceId": 23,
     "group": "property",
     "name": "Lagos Yacht Club",
@@ -262,7 +259,6 @@
     "mortgageStatus": false
   },
   {
-    "id": 21,
     "spaceId": 24,
     "group": "property",
     "name": "Tiamiyu Savage Str.",
@@ -277,7 +273,6 @@
     "mortgageStatus": false
   },
   {
-    "id": 22,
     "spaceId": 25,
     "group": "railroad",
     "rent": [25, 50, 100, 200],
@@ -289,7 +284,6 @@
     "mortgageStatus": false
   },
   {
-    "id": 23,
     "spaceId": 26,
     "group": "property",
     "name": "Falomo Shopping Centre",
@@ -304,7 +298,6 @@
     "mortgageStatus": false
   },
   {
-    "id": 24,
     "spaceId": 27,
     "group": "property",
     "name": "35 Marina",
@@ -319,7 +312,6 @@
     "mortgageStatus": false
   },
   {
-    "id": 25,
     "spaceId": 28,
     "group": "utility",
     "type": "water",
@@ -331,7 +323,6 @@
     "mortgageStatus": false
   },
   {
-    "id": 26,
     "spaceId": 29,
     "group": "property",
     "name": "Silverbird Cinema",
@@ -346,7 +337,12 @@
     "mortgageStatus": false
   },
   {
-    "id": 27,
+    "spaceId": 30,
+    "group": "corner",
+    "name": "Go To Jail",
+    "occupants": []
+  },
+  {
     "spaceId": 31,
     "group": "property",
     "name": "Ikoyi",
@@ -361,7 +357,6 @@
     "mortgageStatus": false
   },
   {
-    "id": 28,
     "spaceId": 32,
     "group": "property",
     "name": "635 Akin Adesola St.",
@@ -376,13 +371,11 @@
     "mortgageStatus": false
   },
   {
-    "id": 29,
     "spaceId": 33,
     "group": "action",
     "type": "community"
   },
   {
-    "id": 30,
     "spaceId": 34,
     "group": "property",
     "name": "Ilashe Road",
@@ -397,7 +390,6 @@
     "mortgageStatus": false
   },
   {
-    "id": 31,
     "spaceId": 35,
     "group": "railroad",
     "rent": [25, 50, 100, 200],
@@ -409,13 +401,11 @@
     "mortgageStatus": false
   },
   {
-    "id": 32,
     "spaceId": 36,
     "group": "action",
     "type": "chance"
   },
   {
-    "id": 33,
     "spaceId": 37,
     "group": "property",
     "name": "Bourdillon Road",
@@ -430,14 +420,12 @@
     "mortgageStatus": false
   },
   {
-    "id": 34,
     "spaceId": 38,
     "group": "fee",
     "type": "luxury",
     "fee": 100
   },
   {
-    "id": 35,
     "spaceId": 39,
     "group": "property",
     "name": "Banana Island",

@@ -61,9 +61,9 @@ class Board extends Component {
 
     //---------------------------------------------------------------------Consequent Instances
     window.addEventListener("resize", e => {
-      let board = document.querySelector(".board");
-      let boardDetails = board.getBoundingClientRect();
-      let spacePositions = {};
+      board = document.querySelector(".board");
+      boardDetails = board.getBoundingClientRect();
+      spacePositions = {};
       spacePositions["board"] = boardDetails.toJSON();
       allSpaces.forEach(space => {
         spacePositions[space.id] = space.getBoundingClientRect().toJSON();
@@ -72,34 +72,36 @@ class Board extends Component {
     });
 
     // START GAMEEEEEEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!---------------------------------------------------
-    this.context.setInitialPlayers([
-      {
-        name: "Tommy",
-        icon: "knight",
-        color: "red"
-      },
-      {
-        name: "David",
-        icon: "pawn",
-        color: "blue"
-      }
-    ]);
+    board.addEventListener("click", () => {
+      this.context.setInitialPlayers([
+        {
+          name: "Tommy",
+          icon: "knight",
+          color: "red"
+        },
+        {
+          name: "David",
+          icon: "pawn",
+          color: "blue"
+        }
+      ]);
 
-    this.context.setPlayerPosition(0, 3);
-    console.log(this.context);
+      this.context.setPlayerPosition(0, 3);
+      console.log(this.context);
+    });
   }
 
   render() {
     return (
       <div className="board">
         <Center />
-        <Go />
+        <Go space={this.context.Game.SpaceList[0]} />
         <BottomRow />
-        <JustVisiting />
+        <JustVisiting space={this.context.Game.SpaceList[10]} />
         <LeftRow />
-        <Parking />
+        <Parking space={this.context.Game.SpaceList[20]} />
         <TopRow />
-        <GoToJail />
+        <GoToJail space={this.context.Game.SpaceList[30]} />
         <RightRow />
         {this.context.InfoCard.display ? <InfoCard /> : null}
         <TokenContainer />

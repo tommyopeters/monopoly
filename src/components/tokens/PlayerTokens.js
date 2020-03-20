@@ -14,15 +14,24 @@ const PlayerTokens = props => {
   return (
     <div
       id={`clone-of-${props.id}`}
-      className={`clone-of ${props.settings.row ? props.settings.row : null}`}
+      className={`clone-of ${props.settings.row ? props.settings.row : null} ${
+        props.settings.group
+      }`}
       style={style}
     >
       <div className="clone-container">
-        <div className="clone-houses"></div>
+        {props.settings.group === "property" ? (
+          <div className="clone-houses"></div>
+        ) : null}
+
         <div className="clone-players"></div>
-        <div className="clone-owner">
-          {props.settings.owner ? <img src={PlayerToken} alt="" /> : null}
-        </div>
+        {props.settings.group === "property" ||
+        props.settings.group === "utility" ||
+        props.settings.group === "railroad" ? (
+          <div className="clone-owner">
+            {props.settings.owner ? <img src={PlayerToken} alt="" /> : null}
+          </div>
+        ) : null}
       </div>
     </div>
   );
